@@ -1,0 +1,654 @@
+[main] 2021-08-18 11:40:32 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 11:40:32 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 11:40:32 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 11:40:32 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 11:40:32 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 11:40:32 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 11:40:35 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 11:40:48 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 11:40:53 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 11:40:53 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 11:40:53 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 11:40:53 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 11:40:53 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 11:40:53 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 11:40:58 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 11:41:51 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order(o_status,o_id) values (?,?)' at line 1
+[main] 2021-08-18 11:41:51 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 11:41:51 WARN  com.revature.Main  - Hey...please enter a valid choice between 1-5
+
+[main] 2021-08-18 11:41:51 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 11:41:51 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 11:41:51 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 11:41:51 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 11:41:51 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 11:41:51 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 11:46:46 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 11:46:46 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 11:46:46 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 11:46:47 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 11:46:47 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 11:46:47 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 11:46:47 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 11:46:49 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 11:47:17 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 11:47:22 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 11:47:22 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 11:47:22 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 11:47:22 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 11:47:22 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 11:47:22 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 11:47:25 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 11:47:28 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order(o_status,o_id)values(?,?)' at line 1
+[main] 2021-08-18 11:47:28 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 11:47:28 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 11:47:28 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 11:47:28 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 11:47:28 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 11:47:28 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 11:47:28 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 11:49:15 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 11:49:17 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 11:49:26 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 11:49:29 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 11:49:29 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 11:49:29 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 11:49:29 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 11:49:29 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 11:49:29 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 11:51:02 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 11:51:05 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order(o_status,o_id) values(?,?)' at line 1
+[main] 2021-08-18 11:51:05 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 11:51:05 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 11:51:05 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 11:51:05 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 11:51:05 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 11:51:05 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 11:51:05 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:16:03 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:16:05 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:17:00 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:17:06 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-18 12:17:06 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-18 12:17:06 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:17:11 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:17:13 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:17:24 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:17:30 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:17:30 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:17:30 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:17:30 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:17:30 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:17:30 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:17:53 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:18:01 WARN  com.revature.Main  - Enter a valid number
+
+[main] 2021-08-18 12:18:01 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order(o_status,o_id) values(?,?)' at line 1
+[main] 2021-08-18 12:18:01 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 12:18:01 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:18:01 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:18:01 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:18:01 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:18:01 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:18:01 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:21:17 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:21:19 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:21:29 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:21:34 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:21:34 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:21:34 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:21:34 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:21:34 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:21:34 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:21:43 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:21:52 WARN  com.revature.Main  - Enter a valid number
+
+[main] 2021-08-18 12:21:52 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?,?)' at line 1
+[main] 2021-08-18 12:21:52 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 12:21:52 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:21:52 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:21:52 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:21:52 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:21:52 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:21:52 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:23:06 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:23:08 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:23:18 INFO  com.revature.dao.impl.CustomerDaoImpl  - Invalid email id
+[main] 2021-08-18 12:23:18 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-18 12:23:18 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:23:20 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:23:22 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:23:31 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:23:36 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:23:36 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:23:36 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:23:36 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:23:36 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:23:36 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:23:40 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:23:45 WARN  com.revature.Main  - Enter a valid number
+
+[main] 2021-08-18 12:23:45 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`online_shopping`.`orders`, CONSTRAINT `order_foreign_key` FOREIGN KEY (`o_id`) REFERENCES `cart` (`or_id`))
+[main] 2021-08-18 12:23:45 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 12:23:45 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:23:45 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:23:45 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:23:45 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:23:45 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:23:45 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:26:20 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:26:22 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:26:36 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:26:43 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:26:43 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:26:43 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:26:43 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:26:43 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:26:43 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:26:46 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:26:51 WARN  com.revature.Main  - Enter a valid number
+
+[main] 2021-08-18 12:26:51 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown table 'or_id' in MULTI DELETE
+[main] 2021-08-18 12:26:51 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 12:26:51 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:26:51 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:26:51 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:26:51 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:26:51 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:26:51 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:32:45 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:32:47 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:32:58 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:33:34 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:33:34 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:33:34 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:33:34 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:33:34 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:33:34 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:33:42 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:33:46 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown table 'or_id' in MULTI DELETE
+[main] 2021-08-18 12:33:46 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 12:33:46 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:33:46 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:33:46 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:33:46 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:33:46 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:33:46 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 12:51:02 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 12:51:04 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 12:51:16 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-18 12:51:20 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:51:20 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:51:20 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:51:20 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:51:20 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:51:20 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:51:24 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:51:30 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'orders.PRIMARY'
+[main] 2021-08-18 12:51:30 WARN  com.revature.Main  - Internal error occured
+[main] 2021-08-18 12:51:30 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:51:30 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:51:30 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:51:30 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:51:30 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:51:30 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 12:54:15 INFO  com.revature.Main  - Enter the name of the product you want to add to the cart
+
+[main] 2021-08-18 12:54:20 INFO  com.revature.Main  - Product added to cart successfully
+[main] 2021-08-18 12:54:20 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Congo...your order has been successfully placed
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-18 12:54:26 INFO  com.revature.Main  - Enter 5 to log out
+
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 13:26:17 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 13:27:08 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 13:27:20 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 13:27:23 INFO  com.revature.Main  - Enter your first name
+
+[main] 2021-08-18 13:27:38 INFO  com.revature.Main  - Enter your last name
+
+[main] 2021-08-18 13:27:42 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 13:27:58 INFO  com.revature.Main  - Enter a password
+
+[main] 2021-08-18 13:28:10 INFO  com.revature.Main  - You have successfully signed up
+[main] 2021-08-18 13:28:10 WARN  com.revature.Main  - Hey...please enter a valid choice between 1-4
+
+[main] 2021-08-18 13:28:10 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 13:28:10 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 13:28:10 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 13:28:10 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 14:22:32 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 14:22:35 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 14:22:35 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:22:35 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:22:35 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:22:35 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:22:35 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:23:20 INFO  com.revature.Main  - Dear employee please enter the order id
+
+[main] 2021-08-18 14:23:22 ERROR com.revature.dao.impl.EmployeeDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? where o_id=?' at line 1
+[main] 2021-08-18 14:23:22 WARN  com.revature.Main  - Internal error occured contact your System administrator
+[main] 2021-08-18 14:23:22 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:23:22 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:23:22 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:23:22 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:23:22 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:25:56 INFO  com.revature.Main  - Dear employee please enter the order id
+
+[main] 2021-08-18 14:25:56 ERROR com.revature.dao.impl.EmployeeDaoImpl  - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? where o_id=?' at line 1
+[main] 2021-08-18 14:25:56 WARN  com.revature.Main  - Internal error occured contact your System administrator
+[main] 2021-08-18 14:25:56 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:25:56 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:25:56 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:25:56 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:25:56 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 14:28:48 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 14:28:53 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 14:28:53 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:28:53 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:28:53 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:28:53 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:28:53 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:28:56 INFO  com.revature.Main  - Dear employee please enter the order id
+
+[main] 2021-08-18 14:28:58 INFO  com.revature.Main  - Order Shipped
+[main] 2021-08-18 14:28:58 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:28:58 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:28:58 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:28:58 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:28:58 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 14:31:15 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 14:31:25 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 14:31:25 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:31:25 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:31:25 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:31:25 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:31:25 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:31:37 INFO  com.revature.Main  - Dear employee please enter the order id
+
+[main] 2021-08-18 14:31:42 INFO  com.revature.Main  - Order Shipped
+[main] 2021-08-18 14:31:42 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:31:42 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:31:42 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:31:42 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:31:42 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:52:08 INFO  com.revature.Main  - Enter the name of new product
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-18 14:52:21 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-18 14:52:22 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-18 14:52:22 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-18 14:52:22 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-18 14:52:22 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-18 14:52:22 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-18 14:52:22 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-18 14:52:28 INFO  com.revature.Main  - Dear employee please enter the order id
+
