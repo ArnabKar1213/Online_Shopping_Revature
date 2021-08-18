@@ -3,6 +3,7 @@ package com.revature.model;
 public class Order {
 	private String o_status;
 	private int o_id;
+	private int oc_id;
 	@Override
 	public String toString() {
 		return "Order [o_status=" + o_status + ", o_id=" + o_id + "]";
@@ -11,6 +12,9 @@ public class Order {
 		super();
 		this.o_status = o_status;
 		this.o_id = o_id;
+	}
+	public Order() {
+		
 	}
 	public String getO_status() {
 		return o_status;

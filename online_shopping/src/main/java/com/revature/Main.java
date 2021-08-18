@@ -5,6 +5,8 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.app.exception.BusinessException;
+import com.revature.Service.Service;
+import com.revature.ServiceImpl.ServiceImpl;
 import com.revature.dao.CustomerDao;
 import com.revature.dao.CustomerSearchDao;
 import com.revature.dao.EmployeeDao;
@@ -26,6 +28,7 @@ public class Main {
 			log.info("=======================================================================");
 			Scanner sc = new Scanner(System.in);
 			int choice=0;
+			Service service = new ServiceImpl();
 			do {
 			log.info("Enter 1 to login as an Employee\n");
 			log.info("Enter 2 to login as an Customer\n");
@@ -67,7 +70,8 @@ public class Main {
 					log.info("Enter 3 modify the status of an order\n");
 					
 					log.info("Enter 4 to log out\n");
-					choice1=Integer.parseInt(sc.nextLine());
+					//Service service = new ServiceImpl();
+					choice1=sc.nextInt();
 					switch(choice1) {
 						case 1:
 								String pro_Name,pro_Category;
@@ -83,8 +87,9 @@ public class Main {
 								Product product = new Product(pro_Name,pro_Price,pro_Category,pro_Quantity);
 					
 								EmployeeDao employee= new EmployeeDaoImpl();
+					//			Service service = new ServiceImpl();
 								try {
-									int c=employee.addProductByEmp(product);
+									int c=service.addProductByEmp(product);
 									if(c==1) 
 										log.info("Product added successfully");
 							
@@ -94,15 +99,88 @@ public class Main {
 								catch(BusinessException e){
 									log.warn(e.getMessage());
 								}
+							break;
 						case 2:
-							
+							int choiceSearch=0;
+							do {
+								
+								log.info("Enter 1 to search by Order Id\n");
+								
+								log.info("Enter 2 to search by First name\n");
+								
+								log.info("Enter 3 to search by Last name \n");
+								
+								log.info("Enter 4 to search by Email id\n");
+								
+								log.info("Enter 5 to search by Customer id\n");
+								
+								log.info("Enter 6 if you want to do some other task\n");
+								
+								choiceSearch=sc.nextInt();
+								
+								switch(choiceSearch) {
+									case 1:
+										log.info("Enter the Order Id\n");
+										int orderId=Integer.parseInt(sc.nextLine());
+										try {
+											service.searchByOrderId(orderId);									}
+										catch(BusinessException e) {
+											log.warn(e.getMessage());
+										}
+										break;
+							       case 2:
+										log.info("Enter the First name\n");
+										String fname=sc.nextLine();
+										try {
+											service.searchByFname(fname);
+										}
+										catch(BusinessException e) {
+											log.warn(e.getMessage());
+										}
+										break;
+							      case 3:
+										log.info("Enter the Last name\n");
+										String lname=sc.nextLine();
+										try {
+											service.searchByLname(lname);
+										}
+										catch(BusinessException e) {
+											log.warn(e.getMessage());
+										}
+										break;
+							      case 4:
+										log.info("Enter the Email Id\n");
+										String emailId=sc.nextLine();
+										try {
+											service.searchByEmailId(emailId);
+										}
+										catch(BusinessException e) {
+											log.warn(e.getMessage());
+										}
+										break;
+							      case 5:
+										log.info("Enter the Customer Id\n");
+										int cus_Id=sc.nextInt();
+										try {
+											service.searchById(cus_Id);
+										}
+										catch(BusinessException e) {
+											log.warn(e.getMessage());
+										}
+										break;
+								 default:
+									 break;
+								}
+								
+							}while(choiceSearch!=6);
+							break;
 						case 3:
 							int order_id=0;
 							EmployeeDao employeeDao = new EmployeeDaoImpl();
 							log.info("Dear employee please enter the order id\n");
-							order_id=Integer.parseInt(sc.nextLine());
+							order_id=sc.nextInt();
 							try {
-							int status=employeeDao.markStatus(order_id);
+							int status=service.markStatus(order_id);
 							if(status==1) {
 								log.info("Order Shipped");
 							}
@@ -110,6 +188,7 @@ public class Main {
 							catch(BusinessException e) {
 								log.warn(e.getMessage());
 							}
+							break;
 						}
 					}while(choice1!=4);
 					//try {
@@ -129,7 +208,7 @@ public class Main {
 					cus_email_Id=sc.nextLine();
 					cus_emailId1=cus_email_Id;
 					try {
-					getPass=customerDao.validEmail(cus_email_Id);
+					getPass=customerDao .validEmail(cus_email_Id);
 					if(getPass==null) {
 					log.info("Enter \"Yes\" if you wish to continue \n");
 					log.info("Enter \"No\" if you do not wish to continue\n");
@@ -179,11 +258,13 @@ public class Main {
 						
 						log.info("Enter 4 to place an order\n");
 						
-						log.info("Enter 5 to log out\n");
+						log.info("Enter 5 to view your orders\n");
+						
+						log.info("Enter 6 to log out\n");
 						
 						ProductDao productDao = new ProductDaoImpl();
 						
-						ch=Integer.parseInt(sc.nextLine());
+						ch=sc.nextInt();
 						switch(ch) {
 						
 							default:
@@ -192,17 +273,17 @@ public class Main {
 							case 1:
 							
 							try {
-							productDao.getAllProducts();
+							//productDao.getAllProducts();
+							service.getAllProducts();
 							}
 							catch(BusinessException e){
 								log.warn(e.getMessage());
 							}
-							
+							break;
 						case 2:
 							log.info("Enter the name of the product you want to add to the cart\n");
 							String p_name;
-							p_name=sc.nextLine();
-					//	Customer customer=new Customer("ABS","PQR","emailld","ayugg");
+							p_name=sc.next();
 							Product addProductCart = new Product(p_name);
 						//CustomerDao customerDao= new CustomerDaoImpl();
 							int pro_price;
@@ -211,6 +292,7 @@ public class Main {
 									int c1;
 									Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
 									pro_price= productDao.getProductPrice(p_name);
+									
 									c1=customerDao.addToCart(addProductCart,customer,pro_price);
 									if(c1==1) {
 										log.info("Product added to cart successfully");
@@ -234,18 +316,20 @@ public class Main {
 							catch(BusinessException e){
 							log.warn(e.getMessage());
 						    }
+							
 					     }
+							break;
 						case 3:
 						//CustomerDao customerDaoc= new CustomerDaoImpl();
 							try {
 								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
-								customerDao.showCart(customer);
+								service.showCart(customer);
 							}
 							catch(BusinessException e){
 							log.warn(e.getMessage());
 							}
 						
-						
+						break;
 						//ch=Integer.parseInt(sc.nextLine());
 						
 						case 4:
@@ -253,15 +337,22 @@ public class Main {
 							log.info("Enter the respective product Id shown in the cart"
 									+ " for the item you want to order\n");
 							try {
-							crP_Id=Integer.parseInt(sc.nextLine());
+								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
+							crP_Id=sc.nextInt();
+							customerDao.placeOrder(crP_Id,customer);
 							}
+							
 							catch(NumberFormatException e){
 								log.warn("Enter a valid number\n");
+							}
+							catch(BusinessException e)
+							{
+								log.warn(e.getMessage());
 							}
 							//while(true) {
 							try {
 								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
-								int r=customerDao.placeOrder(crP_Id);
+								int r=customerDao.placeOrder(crP_Id,customer);
 								if(r==1) {
 									log.info("Congo...your order has been successfully placed");
 								//break;
@@ -283,15 +374,19 @@ public class Main {
 							catch(BusinessException e){
 								log.warn(e.getMessage());
 							}
-							
-						}	
+						break;
+						case 5:
+							try {
+						       service.viewOrder();
+							}
+							catch(BusinessException e)
+							{
+								log.warn(e.getMessage());
+							}
+						break;
 						
-					}while(ch!=5);
-				
-					
-					
-				
-					
+					   }
+					}while(ch!=6);
 				case 3:
 					log.info("Enter your first name\n");
 					int p;
@@ -314,6 +409,7 @@ public class Main {
 					catch(BusinessException e) {
 						log.warn(e.getMessage());
 					}
+					break;
 				default:
 					log.warn("Hey...please enter a valid choice between 1-4\n");
 			}

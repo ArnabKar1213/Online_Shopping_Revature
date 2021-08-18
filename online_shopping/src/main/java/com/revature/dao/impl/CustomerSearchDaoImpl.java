@@ -124,6 +124,7 @@ public class CustomerSearchDaoImpl implements CustomerSearchDao {
 				customer.setC_emailId(resultSet.getString("c_emailId"));
 				customer.setC_pass(resultSet.getString("c_pass"));
 			}
+			System.out.println(customer);
 			
 			
 		}
@@ -152,7 +153,7 @@ public class CustomerSearchDaoImpl implements CustomerSearchDao {
 				customer.setC_emailId(resultSet.getString("c_emailId"));
 				customer.setC_pass(resultSet.getString("c_pass"));
 			}
-			
+			System.out.println(customer);
 			
 		}
 		catch(ClassNotFoundException | SQLException e) {

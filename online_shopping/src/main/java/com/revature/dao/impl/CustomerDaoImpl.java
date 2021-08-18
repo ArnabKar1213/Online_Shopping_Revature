@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +14,7 @@ import com.app.exception.BusinessException;
 import com.revature.dao.CustomerDao;
 import com.revature.model.Cart;
 import com.revature.model.Customer;
+import com.revature.model.Order;
 import com.revature.model.Product;
 
 public class CustomerDaoImpl implements CustomerDao {
@@ -51,7 +51,7 @@ public class CustomerDaoImpl implements CustomerDao {
 		int c=0,d=0;
 		System.out.println(product.getP_name());
 		System.out.println(pro_price);
-		System.out.println(customer.getC_id());
+		//System.out.println(customer.getC_id());
 		try(Connection connection=MySqlDBConnection.getConnection()){
 			String sql="insert into cart(cp_name,cp_price,cus_id)values(?,?,?)";
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -86,14 +86,15 @@ public class CustomerDaoImpl implements CustomerDao {
 	}
 
 	@Override
-	public int placeOrder(int crP_id) throws BusinessException {
+	public int placeOrder(int crP_id,Customer customer) throws BusinessException {
 		int r;
 		try(Connection connection=MySqlDBConnection.getConnection()){
-			String sql="insert into orders(o_status,o_id) values(?,?)";
+			String sql="insert into orders(o_status,o_id,oc_id) values(?,?,?)";
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
 		//	 product.setP_price(p_price);
 			 preparedStatement.setString(1,"Processing");
 			 preparedStatement.setInt(2,crP_id);
+			 preparedStatement.setInt(3,customer.getC_id());
 			 r=preparedStatement.executeUpdate();
 			 
 			 sql="delete from cart where or_id = ?";
@@ -170,9 +171,33 @@ int totalPriceCart=cartList.stream().map(e -> e.getCp_price()).reduce(0,(sum, el
 				}
 		return getPass;
 	}
-	
 
+	@Override
+	public void viewOrder() throws BusinessException {
+		// TODO Auto-generated method stub
+		List<Order> orderList= new ArrayList<>();
+		try(Connection connection = MySqlDBConnection.getConnection()){
+			String sql = "select o_status,o_id from orders o inner join cart c on o.oc_id=c.cus_id";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			
+			ResultSet resultSet = preparedStatement.executeQuery();
+			
+			while(resultSet.next()) {
+				Order order = new Order();
+				order.setO_status(resultSet.getString("o_status"));
+				order.setO_id((resultSet.getInt("o_id")));
+				orderList.add(order);
+			}
+			for(Order order:orderList) {
+				System.out.println(order);
+			}
+			
+		}
+		catch(ClassNotFoundException | SQLException e) {
+			log.error(e);
+			throw new BusinessException("Internal error occured , kindly contact your system administrator");
+		}
 	
-	
+	}
 	
 }

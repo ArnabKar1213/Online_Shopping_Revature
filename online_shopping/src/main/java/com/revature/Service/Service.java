@@ -19,6 +19,7 @@ public int addCustomer(Customer customer)throws BusinessException;
 	public int placeOrder(int crP_id)throws BusinessException;
 	
 	public List<Cart> showCart(Customer customer)throws BusinessException;
+	public void viewOrder()throws BusinessException;
 	
 	public String validEmail(String email)throws BusinessException;
 	
@@ -34,9 +35,9 @@ public int addCustomer(Customer customer)throws BusinessException;
 	
 	public boolean validEmpPass(String emp_pass)throws BusinessException;
 	
-	public boolean markStatus(Product product)throws BusinessException;
+	public int markStatus(int order_Id)throws BusinessException;
 	
-	
+	public Customer searchById(int customer_id) throws BusinessException;
 	//public boolean searchCustomer()throws BusinessException;
 
 	public int addProductByEmp(Product product)throws BusinessException;

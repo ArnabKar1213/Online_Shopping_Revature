@@ -48,6 +48,11 @@ public class Customer {
 		this.c_emailId = c_emailId;
 		this.c_pass = c_pass;
 	}
+	@Override
+	public String toString() {
+		return "Customer [c_id=" + c_id + ", c_fname=" + c_fname + ", c_lname=" + c_lname + ", c_emailId=" + c_emailId
+				+ ", c_pass=" + c_pass + "]";
+	}
 	public Customer(String c_fname, String c_lname, String c_emailId, String c_pass) {
 		
 		
