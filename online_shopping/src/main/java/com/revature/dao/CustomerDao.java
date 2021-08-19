@@ -24,4 +24,6 @@ public interface CustomerDao {
 	
 	public void viewOrder(Customer customer)throws BusinessException;
 	
+	//public markStatusByCustomer
+	
 }

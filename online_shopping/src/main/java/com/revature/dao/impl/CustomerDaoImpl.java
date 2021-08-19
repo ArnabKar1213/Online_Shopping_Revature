@@ -26,18 +26,11 @@ public class CustomerDaoImpl implements CustomerDao {
 		try(Connection connection=MySqlDBConnection.getConnection()){
 			String sql="insert into customer(c_fname,c_lname,c_emailId,c_pass)values(?,?,?,?)";
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
-		//	 product.setP_price(p_price);
-			
-				
-					
 					preparedStatement.setString(1,customer.getC_fname());
 					preparedStatement.setString(2,customer.getC_lname());
 					preparedStatement.setString(3,customer.getC_emailId());
 					preparedStatement.setString(4,customer.getC_pass());
-					c =  preparedStatement.executeUpdate();
-					
-					
-				
+					c =  preparedStatement.executeUpdate();	
 		}
 		catch(ClassNotFoundException | SQLException e) {
 			log.error(e);
@@ -55,27 +48,10 @@ public class CustomerDaoImpl implements CustomerDao {
 		try(Connection connection=MySqlDBConnection.getConnection()){
 			String sql="insert into cart(cp_name,cp_price,cus_id)values(?,?,?)";
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
-	
-			
 			 preparedStatement.setString(1,product.getP_name());
 			 preparedStatement.setInt(2,pro_price);
-			 preparedStatement.setInt(3,customer.getC_id());
-			 
-			 c=preparedStatement.executeUpdate();
-			 
-			/* sql="select p_price from product where p_name=?";
-			 preparedStatement = connection.prepareStatement(sql);
-			 preparedStatement.setInt(1,product.getP_price());
-			 ResultSet resultSet=preparedStatement.executeQuery(sql);
-			 while(resultSet.next()) {
-				 product.setP_price(resultSet.getInt("p_price"));
-			 } 
-			 
-			 sql="update cart set cp_price = ? where cp_name=?";
-			 preparedStatement.setInt(1,product.getP_price());
-			 preparedStatement.setString(2,product.getP_name());
-			 
-			 d=preparedStatement.executeUpdate(sql);*/
+			 preparedStatement.setInt(3,customer.getC_id()); 
+			 c=preparedStatement.executeUpdate(); 
 		}
 		catch(ClassNotFoundException | SQLException e) {
 		log.error(e);
@@ -91,7 +67,6 @@ public class CustomerDaoImpl implements CustomerDao {
 		try(Connection connection=MySqlDBConnection.getConnection()){
 			String sql="insert into orders(o_status,o_id,oc_id) values(?,?,?)";
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
-		//	 product.setP_price(p_price);
 			 preparedStatement.setString(1,"Processing");
 			 preparedStatement.setInt(2,crP_id);
 			 preparedStatement.setInt(3,customer.getC_id());
@@ -100,8 +75,7 @@ public class CustomerDaoImpl implements CustomerDao {
 			 sql="delete from cart where or_id = ?";
 			 preparedStatement = connection.prepareStatement(sql);
 			 preparedStatement.setInt(1,crP_id);
-			 preparedStatement.executeUpdate();
-			 
+			 preparedStatement.executeUpdate();	 
 			 
 		}
 		
@@ -151,7 +125,7 @@ int totalPriceCart=cartList.stream().map(e -> e.getCp_price()).reduce(0,(sum, el
 		int res=0;
 	
 		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select emp_pass from customer where c_emailId=?";
+			String sql = "select c_pass from customer where c_emailId=?";
 				PreparedStatement preparedStatement = connection.prepareStatement(sql);
 				
 				preparedStatement.setString(1,email);

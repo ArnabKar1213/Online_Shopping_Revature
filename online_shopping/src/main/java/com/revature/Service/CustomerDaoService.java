@@ -23,4 +23,8 @@ public interface CustomerDaoService {
 	public String validEmail(String email)throws BusinessException;
 	
 	public void viewOrder(Customer customer)throws BusinessException;
+	
+	public boolean validEmailForNewCustomer(String email);
+
+	public boolean validPasswordForNewCustomer(String password);
 }

@@ -11,10 +11,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.app.exception.BusinessException;
-import com.revature.dao.CustomerSearchDao;
-import com.revature.dao.EmployeeDao;
-import com.revature.dao.impl.CustomerSearchDaoImpl;
-import com.revature.dao.impl.EmployeeDaoImpl;
+import com.revature.Service.CustomerDaoService;
+import com.revature.Service.CustomerSearchDaoService;
+import com.revature.Service.EmployeeDaoService;
+import com.revature.ServiceImpl.CustomerDaoServiceImpl;
+import com.revature.ServiceImpl.CustomerSearchDaoServiceImpl;
+import com.revature.ServiceImpl.EmployeeDaoServiceImpl;
 import com.revature.model.Customer;
 import com.revature.model.Employee;
 class Test_Main {
@@ -22,20 +24,21 @@ class Test_Main {
 	static Scanner scanner =new Scanner(System.in);
 	static String cus_emailId="";
 	static String em_emailId="";
-	static CustomerSearchDao customerSearchDao = new CustomerSearchDaoImpl();
-	static EmployeeDao employeeDao = new EmployeeDaoImpl();
+	static String emailTest="";
+	static String passwordTest="";
+	static CustomerSearchDaoService customerSearchDaoService = new CustomerSearchDaoServiceImpl();
+	static EmployeeDaoService employeeDaoService = new EmployeeDaoServiceImpl();
+	static CustomerDaoService customerDaoService = new CustomerDaoServiceImpl();
 	static Customer customer;
 	static Employee employee;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		//final CustomerSearchDao customerSearchDao = new CustomerSearchDaoImpl();
-		int choice=0;
 		
 				log.info("Please Enter the email Id of Customer\n");
 				cus_emailId=scanner.next();
 				try {
-				customer=customerSearchDao.searchByEmailId(cus_emailId);
+				customer=customerSearchDaoService.searchByEmailId(cus_emailId);
 				}
 				catch(BusinessException e) {
 					log.warn(e.getMessage());
@@ -45,12 +48,17 @@ class Test_Main {
 				log.info("Please Enter the email Id of Employee\n");
 				em_emailId=scanner.next();
 				try {
-					employee=employeeDao.getEmpByEmailId(em_emailId);
+					employee=employeeDaoService.getEmpByEmailId(em_emailId);
 				}
 				catch(BusinessException e) {
 					log.warn(e.getMessage());
 				}
-			
+				
+				log.info("Please enter the email Id you want to test\n");
+				emailTest=scanner.next();
+				
+				log.info("Please enter the password you want to test\n");
+				passwordTest=scanner.next();
 	}
 
 	@AfterAll
@@ -113,5 +121,15 @@ class Test_Main {
 	void testEmpId() throws BusinessException{
 		//Test_Case 8
 		Assertions.assertEquals(1, employee.getEmp_id(),"fail");
+	}
+	@Test
+	void testvalidNewCustomerEmail() throws BusinessException{
+		//Test_Case 9
+		Assertions.assertTrue(customerDaoService.validEmailForNewCustomer(emailTest));
+	}
+	@Test
+	void testvalidNewCustomerPassword() throws BusinessException{
+		//Test_Case 10
+		Assertions.assertTrue(customerDaoService.validPasswordForNewCustomer(passwordTest));
 	}
 }

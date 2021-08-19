@@ -47,14 +47,15 @@ public class CustomerDaoServiceImpl implements CustomerDaoService{
 	@Override
 	public int addToCart(Product product, Customer customer, int pro_price) throws BusinessException {
 		// TODO Auto-generated method stub
+		int c=0;
 		CustomerDao customerDao= new CustomerDaoImpl();
 		try {
-		customerDao.addToCart(product,customer,pro_price);
+		c=customerDao.addToCart(product,customer,pro_price);
 		}
 		catch(BusinessException e) {
 			log.warn(e.getMessage());
 		}
-		return 0;
+		return c;
 	}
 
 	@Override
@@ -91,7 +92,7 @@ public class CustomerDaoServiceImpl implements CustomerDaoService{
 		int res=0;
 	
 		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select emp_pass from customer where c_emailId=?";
+			String sql = "select c_pass from customer where c_emailId=?";
 				PreparedStatement preparedStatement = connection.prepareStatement(sql);
 				
 				preparedStatement.setString(1,email);
@@ -138,5 +139,27 @@ public class CustomerDaoServiceImpl implements CustomerDaoService{
 			throw new BusinessException("Internal error occured , kindly contact your system administrator");
 		}
 	}
-
+	
+	public boolean validEmailForNewCustomer(String email){
+		if(email.contains("@"))
+			return true;
+		else {
+			log.info("Please enter a valid email id\n");
+			return false;
+		}
+	}
+	@Override
+	public boolean validPasswordForNewCustomer(String pass){
+		if (pass.contains("@") || pass.contains("#")|| pass.contains("$") || pass.contains("%")|| pass.contains("!") || pass.contains("~")
+	              || pass.contains(")") || pass.contains("-")
+	              || pass.contains("+") || pass.contains("/")
+	              || pass.contains("^") || pass.contains("&")
+	              || pass.contains("*") || pass.contains("(")
+	             )
+			return true;
+		else {
+			log.info("Ypur password should contain at least one special character id\n");
+			return false;
+		}
+	}
 }

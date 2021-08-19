@@ -5,8 +5,14 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.app.exception.BusinessException;
-import com.revature.Service.Service;
-import com.revature.ServiceImpl.ServiceImpl;
+import com.revature.Service.CustomerDaoService;
+import com.revature.Service.CustomerSearchDaoService;
+import com.revature.Service.EmployeeDaoService;
+import com.revature.Service.ProductDaoService;
+import com.revature.ServiceImpl.CustomerDaoServiceImpl;
+import com.revature.ServiceImpl.CustomerSearchDaoServiceImpl;
+import com.revature.ServiceImpl.EmployeeDaoServiceImpl;
+import com.revature.ServiceImpl.ProductDaoServiceImpl;
 import com.revature.dao.CustomerDao;
 import com.revature.dao.CustomerSearchDao;
 import com.revature.dao.EmployeeDao;
@@ -28,18 +34,18 @@ public class Main {
 			log.info("=======================================================================");
 			Scanner sc = new Scanner(System.in);
 			int choice=0;
-			Service service = new ServiceImpl();
+			CustomerDaoService customerDaoService = new CustomerDaoServiceImpl();
+			CustomerSearchDaoService customerSearchDaoService = new CustomerSearchDaoServiceImpl();
+			EmployeeDaoService employeeDaoService = new EmployeeDaoServiceImpl();
+			ProductDaoService productDaoService = new ProductDaoServiceImpl();
 			do {
 			log.info("Enter 1 to login as an Employee\n");
 			log.info("Enter 2 to login as an Customer\n");
 			log.info("Enter 3 to register as a Customer\n");
 			log.info("Enter 4 to exit\n");
-			try {
-			choice=Integer.parseInt(sc.nextLine());
-			}
-			catch(NumberFormatException e) {
-				log.warn("Please enter valid number\n");
-			}
+			
+			choice=sc.nextInt();
+			
 			switch(choice) {
 			
 				case 1:
@@ -48,10 +54,10 @@ public class Main {
 					//boolean email;
 					EmployeeDao empDao = new EmployeeDaoImpl();
 					log.info("Enter your email id\n");
-					emp_email_Id=sc.nextLine();
+					emp_email_Id=sc.next();
 					String emp_emailId1=emp_email_Id;
 					try {
-					getEmpPass=empDao.validEmpEmail(emp_email_Id);
+					getEmpPass=employeeDaoService.validEmpEmail(emp_email_Id);
 					if(getEmpPass==null) {
 					log.info("Enter \"Yes\" if you wish to continue \n");
 					log.info("Enter \"No\" if you do not wish to continue\n");
@@ -66,7 +72,7 @@ public class Main {
 					
 					while(true) {
 					log.info("Enter your password\n");
-					emp_password=sc.nextLine();
+					emp_password=sc.next();
 					if(!(emp_password.equals(getEmpPass))) {
 						log.info("Invalid Password\n");
 						log.info("Enter \"Yes\" if you wish to continue \n");
@@ -106,11 +112,16 @@ public class Main {
 					
 					log.info("Enter 2 to search a customer\n");
 					
-					log.info("Enter 3 modify the status of an order\n");
+					log.info("Enter 3 to mark the status of an order as shipped\n");
 					
 					log.info("Enter 4 to log out\n");
 					//Service service = new ServiceImpl();
+					try {
 					choice1=sc.nextInt();
+					}
+					catch(NumberFormatException e) {
+						
+					}
 					switch(choice1) {
 						case 1:
 								String pro_Name,pro_Category;
@@ -128,7 +139,7 @@ public class Main {
 								EmployeeDao employee= new EmployeeDaoImpl();
 					//			Service service = new ServiceImpl();
 								try {
-									int c=service.addProductByEmp(product);
+									int c=employeeDaoService.addProductByEmp(product);
 									if(c==1) 
 										log.info("Product added successfully");
 							
@@ -151,9 +162,7 @@ public class Main {
 								
 								log.info("Enter 4 to search by Email id\n");
 								
-								log.info("Enter 5 to search by Customer id\n");
-								
-								log.info("Enter 6 if you want to do some other task\n");
+								log.info("Enter 5 if you want to do some other task\n");
 								
 								choiceSearch=sc.nextInt();
 								
@@ -162,16 +171,16 @@ public class Main {
 										log.info("Enter the Order Id\n");
 										int orderId=sc.nextInt();
 										try {
-											service.searchByOrderId(orderId);									}
+											customerSearchDaoService.searchByOrderId(orderId);									}
 										catch(BusinessException e) {
 											log.warn(e.getMessage());
 										}
 										break;
 							       case 2:
 										log.info("Enter the First name\n");
-										String fname=sc.nextLine();
+										String fname=sc.next();
 										try {
-											service.searchByFname(fname);
+											customerSearchDaoService.searchByFname(fname);
 										}
 										catch(BusinessException e) {
 											log.warn(e.getMessage());
@@ -179,9 +188,9 @@ public class Main {
 										break;
 							      case 3:
 										log.info("Enter the Last name\n");
-										String lname=sc.nextLine();
+										String lname=sc.next();
 										try {
-											service.searchByLname(lname);
+											customerSearchDaoService.searchByLname(lname);
 										}
 										catch(BusinessException e) {
 											log.warn(e.getMessage());
@@ -189,29 +198,20 @@ public class Main {
 										break;
 							      case 4:
 										log.info("Enter the Email Id\n");
-										String emailId=sc.nextLine();
+										String emailId=sc.next();
 										try {
-											service.searchByEmailId(emailId);
+											customerSearchDaoService.searchByEmailId(emailId);
 										}
 										catch(BusinessException e) {
 											log.warn(e.getMessage());
 										}
 										break;
-							      case 5:
-										log.info("Enter the Customer Id\n");
-										int cus_Id=sc.nextInt();
-										try {
-											service.searchById(cus_Id);
-										}
-										catch(BusinessException e) {
-											log.warn(e.getMessage());
-										}
-										break;
+							     
 								 default:
 									 break;
 								}
 								
-							}while(choiceSearch!=6);
+							}while(choiceSearch!=5);
 							break;
 						case 3:
 							int order_id=0;
@@ -219,7 +219,7 @@ public class Main {
 							log.info("Dear employee please enter the order id\n");
 							order_id=sc.nextInt();
 							try {
-							int status=service.markStatus(order_id);
+							int status=employeeDaoService.markStatus(order_id);
 							if(status==1) {
 								log.info("Order Shipped");
 							}
@@ -233,29 +233,24 @@ public class Main {
 							break;
 						}
 					}while(choice1!=4);
+					//sc.nextLine();
 					break;
-					//try {
-					//emp_password = sc.nextLine();
-					//if(validEmpPass!=1)	
-					//}
-				//	catch(BusinessException e) {
-					//	log.warn("Please enter correct password");
-					//}
+					
 				case 2:
 					String cus_emailId1;
 					int res;
 					
-					log.info("Enter your email id\n");
+					log.info("Dear customer,enter your email id\n");
 					String cus_email_Id,cus_password,getPass=null;
 					CustomerDao customerDao= new CustomerDaoImpl();
-					cus_email_Id=sc.nextLine();
+					cus_email_Id=sc.next();
 					cus_emailId1=cus_email_Id;
 					try {
-					getPass=customerDao .validEmail(cus_email_Id);
+					getPass=customerDaoService.validEmail(cus_email_Id);
 					if(getPass==null) {
 					log.info("Enter \"Yes\" if you wish to continue \n");
 					log.info("Enter \"No\" if you do not wish to continue\n");
-					String c=sc.nextLine();
+					String c=sc.next();
 					if(c.equals("No")) {
 						System.out.println("Thanks for shopping\n");
 						System.exit(0);
@@ -266,12 +261,12 @@ public class Main {
 					
 					while(true) {
 					log.info("Enter your password\n");
-					cus_password=sc.nextLine();
+					cus_password=sc.next();
 					if(!(cus_password.equals(getPass))) {
 						log.info("Invalid Password\n");
 						log.info("Enter \"Yes\" if you wish to continue \n");
 						log.info("Enter \"No\" if you do not wish to continue\n");
-						String c=sc.nextLine();
+						String c=sc.next();
 						if(c.equals("No")) {
 							log.info("Thank you for shopping\n");
 							System.exit(0);
@@ -309,15 +304,10 @@ public class Main {
 						
 						ch=sc.nextInt();
 						switch(ch) {
-						
-							default:
-							log.warn("Dear customer...to proceed , please enter a valid choice between 1-6\n");
-							break;
 							case 1:
-							
 							try {
 							//productDao.getAllProducts();
-							service.getAllProducts();
+							productDaoService.getAllProducts();
 							}
 							catch(BusinessException e){
 								log.warn(e.getMessage());
@@ -333,19 +323,19 @@ public class Main {
 							while(true) {
 								try {
 									int c1;
-									Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
+									Customer customer=customerSearchDaoService.searchByEmailId(cus_emailId1);
 									pro_price= productDao.getProductPrice(p_name);
 									
-									c1=customerDao.addToCart(addProductCart,customer,pro_price);
+									c1=customerDaoService.addToCart(addProductCart,customer,pro_price);
 									if(c1==1) {
 										log.info("Product added to cart successfully");
 										break;
 									}
-									else {
+									else if(c1!=1){
 										log.info("Oops!....Please try again\n");
 										log.info("Enter \"Yes\" if you wish to continue to add product to your cart\n");
 										log.info("Enter \"No\" if you do not wish to continue\n");
-										String c=sc.nextLine();
+										String c=sc.next();
 										if(c.equals("No")) {
 											ch=5;
 											break;
@@ -366,7 +356,7 @@ public class Main {
 						//CustomerDao customerDaoc= new CustomerDaoImpl();
 							try {
 								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
-								service.showCart(customer);
+								customerDaoService.showCart(customer);
 							}
 							catch(BusinessException e){
 							log.warn(e.getMessage());
@@ -379,25 +369,12 @@ public class Main {
 							int crP_Id=0;
 							log.info("Enter the respective product Id shown in the cart"
 									+ " for the item you want to order\n");
-							/*try {
-								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
-							crP_Id=sc.nextInt();
-							customerDao.placeOrder(crP_Id,customer);
-							}
 							
-							catch(NumberFormatException e){
-								log.warn("Enter a valid number\n");
-							}
-							catch(BusinessException e)
-							{
-								log.warn(e.getMessage());
-							}*/
-							//while(true) {
 							try {
 								crP_Id=sc.nextInt();
 								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
 								//int r=customerDao.placeOrder(crP_Id,customer);
-								int r=service.placeOrder(crP_Id,customer);
+								int r=customerDaoService.placeOrder(crP_Id,customer);
 								
 								if(r==1) {
 									log.info("Congo...your order has been successfully placed");
@@ -405,17 +382,8 @@ public class Main {
 								}
 								else {
 									log.info("Oops!....Please try again\n");
-									/*log.info("Enter \"Yes\" if you wish to continue to place an order\n");
-									log.info("Enter \"No\" if you do not wish to continue\n");
-									String c=sc.nextLine();
-									if(c.equals("No"))
-						        	break;
-									else if(c.equals("Yes"))
-										continue; */
 									
-								}
-							
-								
+								}	
 							}
 							catch(BusinessException e){
 								log.warn(e.getMessage());
@@ -424,13 +392,15 @@ public class Main {
 						case 5:
 							try {
 							   Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
-						       service.viewOrder(customer);
+							   customerDaoService.viewOrder(customer);
 							}
 							catch(BusinessException e)
 							{
 								log.warn(e.getMessage());
 							}
 						break;
+						default:
+							break;
 						
 					   }
 					}while(ch!=6);
@@ -439,17 +409,29 @@ public class Main {
 					log.info("Enter your first name\n");
 					int p;
 					String cus_email_Id1,cus_password1,cus_fname,cus_lname;
-					cus_fname=sc.nextLine();
+					cus_fname=sc.next();
 					log.info("Enter your last name\n");
-					cus_lname=sc.nextLine();
-					log.info("Enter your email id\n");
-					cus_email_Id1=sc.nextLine();
-					log.info("Enter a password\n");
-					cus_password1=sc.nextLine();
+					cus_lname=sc.next();
+					while(true) {
+						log.info("Enter your email id\n");
+						cus_email_Id1=sc.next();
+					if(customerDaoService.validEmailForNewCustomer(cus_email_Id1))
+						break;
+					else
+						continue;
+					}
+					while(true) {
+						log.info("Enter a password\n");
+						cus_password1=sc.next();
+						if(customerDaoService.validPasswordForNewCustomer(cus_password1))
+							break;
+						else
+							continue;
+						}
 					Customer customer=new Customer(cus_fname,cus_lname,cus_email_Id1,cus_password1);
 					CustomerDao customerDao1 = new CustomerDaoImpl();
 					try {
-					p=customerDao1.addCustomer(customer);
+					p=customerDaoService.addCustomer(customer);
 					if(p==1) {
 						log.info("You have successfully signed up");
 					}
@@ -458,8 +440,8 @@ public class Main {
 						log.warn(e.getMessage());
 					}
 					break;
-				default:
-					log.warn("Hey...please enter a valid choice between 1-4\n");
+				case 4:
+					log.warn("Thank you for using the Console based application\n");
 					break;
 			}
 			}while(choice!=4);
