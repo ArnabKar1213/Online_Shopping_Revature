@@ -1,12 +1,11 @@
-package com.revature.dao;
+package com.revature.Service;
 
 import com.app.exception.BusinessException;
 import com.revature.model.Employee;
 import com.revature.model.Product;
 
-public interface EmployeeDao {
-
-	public String validEmpEmail(String emp_email)throws BusinessException;
+public interface EmployeeDaoService {
+public String validEmpEmail(String emp_email)throws BusinessException;
 	
 	public boolean validEmpPass(String emp_pass)throws BusinessException;
 	

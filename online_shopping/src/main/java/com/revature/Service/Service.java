@@ -16,10 +16,10 @@ public int addCustomer(Customer customer)throws BusinessException;
 	public int addToCart(Product product,Customer customer,int pro_price)throws BusinessException;
 	
 	
-	public int placeOrder(int crP_id)throws BusinessException;
+	public int placeOrder(int crP_id,Customer customer)throws BusinessException;
 	
 	public List<Cart> showCart(Customer customer)throws BusinessException;
-	public void viewOrder()throws BusinessException;
+	public void viewOrder(Customer customer)throws BusinessException;
 	
 	public String validEmail(String email)throws BusinessException;
 	

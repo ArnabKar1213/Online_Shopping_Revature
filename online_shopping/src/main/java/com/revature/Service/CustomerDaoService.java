@@ -1,4 +1,4 @@
-package com.revature.dao;
+package com.revature.Service;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import com.revature.model.Cart;
 import com.revature.model.Customer;
 import com.revature.model.Product;
 
-public interface CustomerDao {
+public interface CustomerDaoService {
 
 	public int addCustomer(Customer customer)throws BusinessException;
 	
@@ -23,5 +23,4 @@ public interface CustomerDao {
 	public String validEmail(String email)throws BusinessException;
 	
 	public void viewOrder(Customer customer)throws BusinessException;
-	
 }

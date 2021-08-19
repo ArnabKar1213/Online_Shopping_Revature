@@ -37,16 +37,17 @@ public class ServiceImpl implements Service {
 	}
 
 	@Override
-	public int placeOrder(int crP_id) throws BusinessException {
+	public int placeOrder(int crP_id,Customer customer) throws BusinessException {
 		// TODO Auto-generated method stub
+		int r=0;
 		CustomerDao customerDao= new CustomerDaoImpl();
-		//try {
-		//customerDao.placeOrder(crP_id);
-		//}
-		//catch(BusinessException e) {
-		//	log.warn(e.getMessage());
-		//}
-		return 0;
+		try {
+		  r= customerDao.placeOrder(crP_id,customer);
+			}
+		catch(BusinessException e) {
+			log.warn(e.getMessage());
+		}
+		return r;
 	}
 
 	@Override
@@ -195,11 +196,11 @@ public class ServiceImpl implements Service {
 	}
 
 	@Override
-	public void viewOrder() throws BusinessException {
+	public void viewOrder(Customer customer) throws BusinessException {
 		// TODO Auto-generated method stub
 		CustomerDao customerDao = new CustomerDaoImpl();
 		try {
-		customerDao.viewOrder();
+		customerDao.viewOrder(customer);
 		}catch(BusinessException e) {
 			log.warn(e.getMessage());
 		}

@@ -44,10 +44,49 @@ public class Main {
 			
 				case 1:
 					int choice1=0;
-					log.info("Enter your email id\n");
-					String emp_email_Id,emp_password;
+					String emp_email_Id,emp_password,getEmpPass=null;
 					//boolean email;
-					EmployeeDao emp = new EmployeeDaoImpl();
+					EmployeeDao empDao = new EmployeeDaoImpl();
+					log.info("Enter your email id\n");
+					emp_email_Id=sc.nextLine();
+					String emp_emailId1=emp_email_Id;
+					try {
+					getEmpPass=empDao.validEmpEmail(emp_email_Id);
+					if(getEmpPass==null) {
+					log.info("Enter \"Yes\" if you wish to continue \n");
+					log.info("Enter \"No\" if you do not wish to continue\n");
+					String c=sc.nextLine();
+					if(c.equals("No")) {
+						System.out.println("Thanks for using the Console-based app\n");
+						System.exit(0);
+					}
+					if(c.equals("Yes"))
+						continue;
+					}
+					
+					while(true) {
+					log.info("Enter your password\n");
+					emp_password=sc.nextLine();
+					if(!(emp_password.equals(getEmpPass))) {
+						log.info("Invalid Password\n");
+						log.info("Enter \"Yes\" if you wish to continue \n");
+						log.info("Enter \"No\" if you do not wish to continue\n");
+						String c=sc.nextLine();
+						if(c.equals("No")) {
+							log.info("Thanks for using the Console-based app\n");
+							System.exit(0);
+						}
+						else if(c.equals("Yes"))
+						continue;
+					}
+					else if(emp_password.equals(getEmpPass))
+						break;
+					}
+					}
+					catch(BusinessException e){
+						log.warn(e.getMessage());
+					}
+								
 				/*	
 					try {
 					emp_email_Id=sc.nextLine();
@@ -121,7 +160,7 @@ public class Main {
 								switch(choiceSearch) {
 									case 1:
 										log.info("Enter the Order Id\n");
-										int orderId=Integer.parseInt(sc.nextLine());
+										int orderId=sc.nextInt();
 										try {
 											service.searchByOrderId(orderId);									}
 										catch(BusinessException e) {
@@ -189,8 +228,12 @@ public class Main {
 								log.warn(e.getMessage());
 							}
 							break;
+						case 4:
+							log.info("Thank you dear Employee\n");
+							break;
 						}
 					}while(choice1!=4);
+					break;
 					//try {
 					//emp_password = sc.nextLine();
 					//if(validEmpPass!=1)	
@@ -268,8 +311,8 @@ public class Main {
 						switch(ch) {
 						
 							default:
-							log.warn("Dear customer...to proceed , please enter a valid choice between 1-5\n");
-						
+							log.warn("Dear customer...to proceed , please enter a valid choice between 1-6\n");
+							break;
 							case 1:
 							
 							try {
@@ -336,7 +379,7 @@ public class Main {
 							int crP_Id=0;
 							log.info("Enter the respective product Id shown in the cart"
 									+ " for the item you want to order\n");
-							try {
+							/*try {
 								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
 							crP_Id=sc.nextInt();
 							customerDao.placeOrder(crP_Id,customer);
@@ -348,11 +391,14 @@ public class Main {
 							catch(BusinessException e)
 							{
 								log.warn(e.getMessage());
-							}
+							}*/
 							//while(true) {
 							try {
+								crP_Id=sc.nextInt();
 								Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
-								int r=customerDao.placeOrder(crP_Id,customer);
+								//int r=customerDao.placeOrder(crP_Id,customer);
+								int r=service.placeOrder(crP_Id,customer);
+								
 								if(r==1) {
 									log.info("Congo...your order has been successfully placed");
 								//break;
@@ -377,7 +423,8 @@ public class Main {
 						break;
 						case 5:
 							try {
-						       service.viewOrder();
+							   Customer customer=customerSearchDao.searchByEmailId(cus_emailId1);
+						       service.viewOrder(customer);
 							}
 							catch(BusinessException e)
 							{
@@ -387,6 +434,7 @@ public class Main {
 						
 					   }
 					}while(ch!=6);
+					break;
 				case 3:
 					log.info("Enter your first name\n");
 					int p;
@@ -412,6 +460,7 @@ public class Main {
 					break;
 				default:
 					log.warn("Hey...please enter a valid choice between 1-4\n");
+					break;
 			}
 			}while(choice!=4);
 	}

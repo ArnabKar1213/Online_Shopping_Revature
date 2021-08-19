@@ -816,3 +816,731 @@
 
 [main] 2021-08-18 02:17:53 INFO  com.revature.Main  - Enter 5 to go the customer login page
 
+[main] 2021-08-19 13:51:11 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 13:52:26 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 13:53:25 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 14:00:49 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 14:06:39 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 14:08:39 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 14:09:09 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 14:09:09 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 14:11:17 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 14:11:23 INFO  online_shopping.Test_Main  - Please Enter the email Id
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:20:36 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:20:39 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:20:51 ERROR com.revature.dao.impl.EmployeeDaoImpl  - java.sql.SQLException: Column 'c_pass' not found.
+[main] 2021-08-19 15:20:51 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:20:51 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:20:51 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:20:51 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:20:51 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:20:51 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:21:21 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:21:23 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:21:31 ERROR com.revature.dao.impl.EmployeeDaoImpl  - java.sql.SQLException: Column 'c_pass' not found.
+[main] 2021-08-19 15:21:31 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:21:31 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:21:31 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:21:31 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:21:31 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:21:31 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:22:02 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:22:09 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:22:14 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:22:22 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:22:22 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:22:22 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:22:22 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:22:22 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:22:40 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:22:42 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:22:49 INFO  com.revature.dao.impl.EmployeeDaoImpl  - Invalid email id
+[main] 2021-08-19 15:22:49 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-19 15:22:49 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:23:01 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:23:03 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:23:26 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:23:45 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:23:49 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:23:52 INFO  com.revature.dao.impl.EmployeeDaoImpl  - Invalid email id
+[main] 2021-08-19 15:23:52 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-19 15:23:52 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:24:00 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:24:42 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:24:45 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:24:52 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:25:00 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:25:00 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:25:00 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:25:00 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:25:00 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:25:34 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown column 'emp_pass' in 'field list'
+[main] 2021-08-19 15:25:34 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-19 15:25:34 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:25:56 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:25:57 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:26:08 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:26:13 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:26:13 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:26:13 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:26:13 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:26:13 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:26:16 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown column 'emp_pass' in 'field list'
+[main] 2021-08-19 15:26:16 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-19 15:26:16 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:27:57 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:27:59 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:28:07 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:28:12 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:28:12 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:28:12 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:28:12 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:28:12 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:28:14 INFO  com.revature.Main  - Thank you dear Employee
+
+[main] 2021-08-19 15:28:14 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:28:15 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown column 'emp_pass' in 'field list'
+[main] 2021-08-19 15:28:15 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-19 15:28:15 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:29:37 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:29:39 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:31:39 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:31:52 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:31:54 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:32:02 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:32:10 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:32:10 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:32:10 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:32:10 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:32:10 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Thank you dear Employee
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:32:15 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown column 'emp_pass' in 'field list'
+[main] 2021-08-19 15:32:15 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-19 15:32:15 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:34:51 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:34:52 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:35:00 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:35:03 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:35:03 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:35:03 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:35:03 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:35:03 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Thank you dear Employee
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:35:07 ERROR com.revature.dao.impl.CustomerDaoImpl  - java.sql.SQLSyntaxErrorException: Unknown column 'emp_pass' in 'field list'
+[main] 2021-08-19 15:35:07 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-19 15:35:07 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:37:14 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:37:17 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:37:25 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:37:31 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:37:31 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:37:31 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:37:31 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:37:31 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:37:33 INFO  com.revature.Main  - Thank you dear Employee
+
+[main] 2021-08-19 15:37:33 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:37:33 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:37:33 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:37:33 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:37:33 WARN  com.revature.Main  - Please enter valid number
+
+[main] 2021-08-19 15:37:33 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:40:00 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:40:03 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:40:14 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:40:19 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:40:19 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:40:19 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:40:19 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:40:19 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:40:23 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-19 15:40:23 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-19 15:40:23 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-19 15:40:23 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-19 15:40:23 INFO  com.revature.Main  - Enter 5 to search by Customer id
+
+[main] 2021-08-19 15:40:23 INFO  com.revature.Main  - Enter 6 if you want to do some other task
+
+[main] 2021-08-19 15:40:27 INFO  com.revature.Main  - Enter the Order Id
+
+[main] 2021-08-19 15:40:50 ERROR com.revature.dao.impl.CustomerSearchDaoImpl  - java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+[main] 2021-08-19 15:40:50 WARN  com.revature.Main  - Internal error occured , kindly contact your system administrator
+[main] 2021-08-19 15:40:50 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-19 15:40:50 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-19 15:40:50 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-19 15:40:50 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-19 15:40:50 INFO  com.revature.Main  - Enter 5 to search by Customer id
+
+[main] 2021-08-19 15:40:50 INFO  com.revature.Main  - Enter 6 if you want to do some other task
+
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-19 15:53:55 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-19 15:53:58 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-19 15:54:09 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-19 15:54:15 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-19 15:54:15 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-19 15:54:15 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-19 15:54:15 INFO  com.revature.Main  - Enter 3 modify the status of an order
+
+[main] 2021-08-19 15:54:15 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-19 15:54:18 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-19 15:54:18 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-19 15:54:18 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-19 15:54:18 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-19 15:54:18 INFO  com.revature.Main  - Enter 5 to search by Customer id
+
+[main] 2021-08-19 15:54:18 INFO  com.revature.Main  - Enter 6 if you want to do some other task
+
+[main] 2021-08-19 15:54:19 INFO  com.revature.Main  - Enter the Order Id
+
+[main] 2021-08-19 15:54:23 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-19 15:54:23 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-19 15:54:23 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-19 15:54:23 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-19 15:54:23 INFO  com.revature.Main  - Enter 5 to search by Customer id
+
+[main] 2021-08-19 15:54:23 INFO  com.revature.Main  - Enter 6 if you want to do some other task
+
+[main] 2021-08-19 16:20:54 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:20:54 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:20:54 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:20:54 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:20:57 INFO  online_shopping.Test_Main  - Enter a valid choice between 1 and 3
+
+[main] 2021-08-19 16:21:48 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:21:48 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:21:48 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:21:48 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:21:50 INFO  online_shopping.Test_Main  - Enter a valid choice between 1 and 3
+
+[main] 2021-08-19 16:22:48 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:22:48 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:22:48 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:22:48 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:22:51 INFO  online_shopping.Test_Main  - Thank you
+
+[main] 2021-08-19 16:22:51 INFO  online_shopping.Test_Main  - Enter a valid choice between 1 and 3
+
+[main] 2021-08-19 16:23:06 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:23:06 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:23:06 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:23:06 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:23:08 INFO  online_shopping.Test_Main  - Thank you
+
+[main] 2021-08-19 16:23:15 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:23:15 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:23:15 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:23:15 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:23:17 INFO  online_shopping.Test_Main  - Please Enter the email Id of Customer
+
+[main] 2021-08-19 16:23:18 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:23:18 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:23:18 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:23:18 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:23:38 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+
+[main] 2021-08-19 16:23:38 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:23:38 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:23:38 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:23:38 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:23:48 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+
+[main] 2021-08-19 16:23:48 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:23:48 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:23:48 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:23:48 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:24:12 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:24:12 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:24:12 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:24:12 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:24:15 INFO  online_shopping.Test_Main  - Please Enter the email Id of Customer
+
+[main] 2021-08-19 16:24:17 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:24:17 INFO  online_shopping.Test_Main  - Enter 1 to check employee's details
+
+[main] 2021-08-19 16:24:17 INFO  online_shopping.Test_Main  - Enter 2 to check customer's details
+
+[main] 2021-08-19 16:24:17 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:24:49 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:24:49 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:24:49 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:24:49 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:24:53 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+
+[main] 2021-08-19 16:24:54 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:24:54 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:24:54 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:24:54 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:26:47 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:26:47 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:26:47 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:26:47 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:26:52 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+
+[main] 2021-08-19 16:27:03 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:27:03 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:27:03 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:27:03 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:27:13 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:27:13 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:27:13 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:27:13 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:27:43 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+
+[main] 2021-08-19 16:27:53 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:27:53 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:27:53 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:27:53 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:28:25 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:28:25 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:28:25 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:28:25 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:28:27 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+
+[main] 2021-08-19 16:28:34 INFO  online_shopping.Test_Main  - Hello,what type of user's details you want to test?
+
+[main] 2021-08-19 16:28:34 INFO  online_shopping.Test_Main  - Enter 1 to check customer's details
+
+[main] 2021-08-19 16:28:34 INFO  online_shopping.Test_Main  - Enter 2 to check employee's details
+
+[main] 2021-08-19 16:28:34 INFO  online_shopping.Test_Main  - Enter 3 to exit
+
+[main] 2021-08-19 16:30:43 INFO  online_shopping.Test_Main  - Please Enter the email Id of Customer
+
+[main] 2021-08-19 16:30:55 INFO  online_shopping.Test_Main  - Please Enter the email Id of Employee
+

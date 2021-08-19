@@ -1,4 +1,4 @@
-package com.revature.dao.impl;
+package com.revature.ServiceImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,16 +9,19 @@ import org.apache.log4j.Logger;
 
 import com.app.dao.dbutil.MySqlDBConnection;
 import com.app.exception.BusinessException;
-import com.revature.dao.EmployeeDao;
+import com.revature.Service.EmployeeDaoService;
 import com.revature.dao.ProductDao;
-import com.revature.model.Customer;
+import com.revature.dao.impl.EmployeeDaoImpl;
+import com.revature.dao.impl.ProductDaoImpl;
 import com.revature.model.Employee;
 import com.revature.model.Product;
 
-public class EmployeeDaoImpl implements EmployeeDao {
-	Logger log = Logger.getLogger(EmployeeDaoImpl.class);
+public class EmployeeDaoServiceImpl implements EmployeeDaoService {
+
+	Logger log = Logger.getLogger(EmployeeDaoServiceImpl.class);
 	@Override
 	public String validEmpEmail(String emp_email) throws BusinessException {
+		// TODO Auto-generated method stub
 		String getPass=null;
 		int res=0;
 	
@@ -46,6 +49,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public boolean validEmpPass(String emp_pass) throws BusinessException {
+		// TODO Auto-generated method stub
 		try(Connection connection=MySqlDBConnection.getConnection()){
 			String sql="select emp_pass from employee";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -60,12 +64,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			throw new BusinessException("Internal error occured contact your System administrator");
 		}
 		return false;
-		
-		
 	}
 
 	@Override
 	public int markStatus(int order_id) throws BusinessException {
+		// TODO Auto-generated method stub
 		int status;
 		try(Connection connection=MySqlDBConnection.getConnection()){
 			String sql="update orders set o_status=? where o_id=?";
@@ -83,7 +86,8 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	}
 
 	@Override
-	public int addProductByEmp(Product product)throws BusinessException{
+	public int addProductByEmp(Product product) throws BusinessException {
+		// TODO Auto-generated method stub
 		int c=0;
 		try {
 		ProductDao productDao = new ProductDaoImpl();
@@ -96,6 +100,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 		return c;
 	}
+
 	@Override
 	public Employee getEmpByEmailId(String email) throws BusinessException {
 		// TODO Auto-generated method stub
@@ -124,8 +129,5 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 		return employee;
 	}
-	}
-	
-	
-	
 
+}

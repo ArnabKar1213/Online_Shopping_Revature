@@ -151,7 +151,7 @@ int totalPriceCart=cartList.stream().map(e -> e.getCp_price()).reduce(0,(sum, el
 		int res=0;
 	
 		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select c_pass from customer where c_emailId=?";
+			String sql = "select emp_pass from customer where c_emailId=?";
 				PreparedStatement preparedStatement = connection.prepareStatement(sql);
 				
 				preparedStatement.setString(1,email);
@@ -173,13 +173,13 @@ int totalPriceCart=cartList.stream().map(e -> e.getCp_price()).reduce(0,(sum, el
 	}
 
 	@Override
-	public void viewOrder() throws BusinessException {
+	public void viewOrder(Customer customer) throws BusinessException {
 		// TODO Auto-generated method stub
 		List<Order> orderList= new ArrayList<>();
 		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select o_status,o_id from orders o inner join cart c on o.oc_id=c.cus_id";
+			String sql = "select o_status,o_id from orders where oc_id=?";
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			
+			preparedStatement.setInt(1,customer.getC_id());
 			ResultSet resultSet = preparedStatement.executeQuery();
 			
 			while(resultSet.next()) {
