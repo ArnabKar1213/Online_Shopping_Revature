@@ -14,11 +14,14 @@ import com.app.exception.BusinessException;
 import com.revature.Service.CustomerDaoService;
 import com.revature.Service.CustomerSearchDaoService;
 import com.revature.Service.EmployeeDaoService;
+import com.revature.Service.ProductDaoService;
 import com.revature.ServiceImpl.CustomerDaoServiceImpl;
 import com.revature.ServiceImpl.CustomerSearchDaoServiceImpl;
 import com.revature.ServiceImpl.EmployeeDaoServiceImpl;
+import com.revature.ServiceImpl.ProductDaoServiceImpl;
 import com.revature.model.Customer;
 import com.revature.model.Employee;
+import com.revature.model.Product;
 class Test_Main {
 	static Logger log = Logger.getLogger(Test_Main.class);
 	static Scanner scanner =new Scanner(System.in);
@@ -29,8 +32,17 @@ class Test_Main {
 	static CustomerSearchDaoService customerSearchDaoService = new CustomerSearchDaoServiceImpl();
 	static EmployeeDaoService employeeDaoService = new EmployeeDaoServiceImpl();
 	static CustomerDaoService customerDaoService = new CustomerDaoServiceImpl();
+	static ProductDaoService productDaoService = new ProductDaoServiceImpl();
 	static Customer customer;
+	static Customer customerTest;
 	static Employee employee;
+	static String pro_name;
+	static int pro_price;
+	static int order_id;
+	static String cus_fname;
+	static String cus_lname;
+	static String cus_email_Id1;
+	static String cus_password1;
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -59,6 +71,40 @@ class Test_Main {
 				
 				log.info("Please enter the password you want to test\n");
 				passwordTest=scanner.next();
+				
+				log.info("Enter the name of the product to check whether it is available in the product list or not\n");
+				pro_name=scanner.next();
+				
+				log.info("Enter the name of the product you want to add to the cart\n");
+				pro_name=scanner.next();
+				pro_price= productDaoService.getProductPrice(pro_name);
+				
+				log.info("Dear employee please enter the order id\n");
+				order_id=scanner.nextInt();
+				
+				log.info("Enter the details for testing the registration of new customer\n");
+				log.info("Please enter the first name\n");
+				cus_fname=scanner.next();
+				log.info("Please enter the last name\n");
+				cus_lname=scanner.next();
+				while(true) {
+					log.info("Enter your email id\n");
+					cus_email_Id1=scanner.next();
+				if(customerDaoService.validEmailForNewCustomer(cus_email_Id1))
+					break;
+				else
+					continue;
+				}
+				while(true) {
+					log.info("Enter a password\n");
+					cus_password1=scanner.next();
+					if(customerDaoService.validPasswordForNewCustomer(cus_password1))
+						break;
+					else
+						continue;
+					}
+				
+				customerTest=new Customer(cus_fname,cus_lname,cus_email_Id1,cus_password1);
 	}
 
 	@AfterAll
@@ -132,4 +178,28 @@ class Test_Main {
 		//Test_Case 10
 		Assertions.assertTrue(customerDaoService.validPasswordForNewCustomer(passwordTest));
 	}
+	@Test
+	void testExitsProduct()throws BusinessException{
+		//Test_Case 11
+		Assertions.assertEquals(1,productDaoService.existsProduct(pro_name),"fail");
+	}
+	@Test
+	void testMarkStatusOrder()throws BusinessException{
+		//Test_Case 12
+		Assertions.assertEquals(1, employeeDaoService.markStatus(order_id),"fail");
+	}
+	
+	@Test
+	void testRegisterCustomer()throws BusinessException{
+		//Test_Case 13
+		Assertions.assertEquals(1,customerDaoService.addCustomer(customerTest),"fail");
+	}
+	@Test
+	void testAddProduct()throws BusinessException{
+		//Test_Case 14
+		Product addProductCart = new Product(pro_name);
+		Assertions.assertEquals(1, customerDaoService.addToCart(addProductCart,customer,pro_price),"fail");
+	}
+	
+	
 }

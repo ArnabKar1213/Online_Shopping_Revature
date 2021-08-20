@@ -97,5 +97,25 @@ public class ProductDaoImpl implements ProductDao{
 		
 		return pro_price;
 	}
+	@Override
+	public int existsProduct(String p_name)throws BusinessException{
+		try(Connection connection = MySqlDBConnection.getConnection()){
+			String sql="select p_id from product where p_name=?";
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
+			preparedStatement.setString(1,p_name);
+			ResultSet resultSet =  preparedStatement.executeQuery();
+			
+			if(resultSet.next()) {
+				return 1;
+			}
+			else {
+			return 0;
+			}
+	}
+		catch(ClassNotFoundException | SQLException e) {
+			//System.out.println(e);//This will be replaced by logger
+			throw new BusinessException("Internal error occurred,please contact System administrator");
+	}
 
+}
 }

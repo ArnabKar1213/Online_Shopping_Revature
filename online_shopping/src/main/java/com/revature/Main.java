@@ -135,9 +135,6 @@ public class Main {
 								log.info("Enter the quantity of new product");
 								pro_Quantity=sc.nextInt();
 								Product product = new Product(pro_Name,pro_Price,pro_Category,pro_Quantity);
-					
-								EmployeeDao employee= new EmployeeDaoImpl();
-					//			Service service = new ServiceImpl();
 								try {
 									int c=employeeDaoService.addProductByEmp(product);
 									if(c==1) 
@@ -215,7 +212,7 @@ public class Main {
 							break;
 						case 3:
 							int order_id=0;
-							EmployeeDao employeeDao = new EmployeeDaoImpl();
+	
 							log.info("Dear employee please enter the order id\n");
 							order_id=sc.nextInt();
 							try {
@@ -322,10 +319,14 @@ public class Main {
 							int pro_price;
 							while(true) {
 								try {
-									int c1;
+									int c1,c2=0;
 									Customer customer=customerSearchDaoService.searchByEmailId(cus_emailId1);
 									pro_price= productDao.getProductPrice(p_name);
-									
+									c2=productDaoService.existsProduct(p_name);
+									if(!(c2==1)) {
+										log.info("Product is not available\n");
+										break;
+									}
 									c1=customerDaoService.addToCart(addProductCart,customer,pro_price);
 									if(c1==1) {
 										log.info("Product added to cart successfully");
@@ -429,7 +430,6 @@ public class Main {
 							continue;
 						}
 					Customer customer=new Customer(cus_fname,cus_lname,cus_email_Id1,cus_password1);
-					CustomerDao customerDao1 = new CustomerDaoImpl();
 					try {
 					p=customerDaoService.addCustomer(customer);
 					if(p==1) {

@@ -13,5 +13,7 @@ public interface ProductDao {
 	public void getAllProducts()throws BusinessException;
 	
 	public int getProductPrice(String p_name)throws BusinessException;
+
+	public int existsProduct(String p_name) throws BusinessException;
 	
 }

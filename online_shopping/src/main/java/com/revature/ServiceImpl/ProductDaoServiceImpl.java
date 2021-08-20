@@ -12,12 +12,14 @@ import org.apache.log4j.Logger;
 import com.app.dao.dbutil.MySqlDBConnection;
 import com.app.exception.BusinessException;
 import com.revature.Service.ProductDaoService;
+import com.revature.dao.ProductDao;
 import com.revature.dao.impl.ProductDaoImpl;
 import com.revature.model.Product;
 
 public class ProductDaoServiceImpl implements ProductDaoService{
 
 	 Logger log = Logger.getLogger(ProductDaoServiceImpl.class);
+	 ProductDao productDao = new ProductDaoImpl();
 	@Override
 	public int addProduct(Product product) throws BusinessException {
 		// TODO Auto-generated method stub
@@ -103,6 +105,14 @@ List<Product> productList = new ArrayList<>();
 		
 		return pro_price;
 		}
+
+	@Override
+	public int existsProduct(String p_name) throws BusinessException {
+		// TODO Auto-generated method stub
+		int c=0;
+		c=productDao.existsProduct(p_name);
+		return c;
+	}
 	
 	
 }
