@@ -22,25 +22,13 @@ import com.revature.model.Product;
 public class CustomerDaoServiceImpl implements CustomerDaoService{
 	
 	Logger log = Logger.getLogger(CustomerDaoServiceImpl.class);
-	
+	CustomerDao customerDao= new CustomerDaoImpl();
 	@Override
 	public int addCustomer(Customer customer) throws BusinessException {
 		// TODO Auto-generated method stub
 		int c=0;
-		
-		try(Connection connection=MySqlDBConnection.getConnection()){
-			String sql="insert into customer(c_fname,c_lname,c_emailId,c_pass)values(?,?,?,?)";
-			 PreparedStatement preparedStatement = connection.prepareStatement(sql);		
-					preparedStatement.setString(1,customer.getC_fname());
-					preparedStatement.setString(2,customer.getC_lname());
-					preparedStatement.setString(3,customer.getC_emailId());
-					preparedStatement.setString(4,customer.getC_pass());
-					c =  preparedStatement.executeUpdate();				
-		}
-		catch(ClassNotFoundException | SQLException e) {
-			log.error(e);
-			throw new BusinessException  ("Internal error occured contact your System administrator");
-			}
+	
+		c=customerDao.addCustomer(customer);
 		return c;
 	}
 
@@ -48,7 +36,7 @@ public class CustomerDaoServiceImpl implements CustomerDaoService{
 	public int addToCart(Product product, Customer customer, int pro_price) throws BusinessException {
 		// TODO Auto-generated method stub
 		int c=0;
-		CustomerDao customerDao= new CustomerDaoImpl();
+		//CustomerDao customerDao= new CustomerDaoImpl();
 		try {
 		c=customerDao.addToCart(product,customer,pro_price);
 		}
@@ -91,25 +79,7 @@ public class CustomerDaoServiceImpl implements CustomerDaoService{
 		String getPass=null;
 		int res=0;
 	
-		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select c_pass from customer where c_emailId=?";
-				PreparedStatement preparedStatement = connection.prepareStatement(sql);
-				
-				preparedStatement.setString(1,email);
-				
-				ResultSet resultSet = preparedStatement.executeQuery();
-				while(resultSet.next()) {
-					getPass=resultSet.getString("c_pass");
-				}
-				if(getPass==null) {
-					log.info("Invalid email id");
-					res=1;
-				}
-		}
-				catch(ClassNotFoundException | SQLException e) {
-					log.error(e);
-					throw new BusinessException("Internal error occured , kindly contact your system administrator");
-				}
+		getPass=customerDao.validEmail(email);
 		return getPass;
 	}
 
@@ -117,27 +87,9 @@ public class CustomerDaoServiceImpl implements CustomerDaoService{
 	public void viewOrder(Customer customer) throws BusinessException {
 		// TODO Auto-generated method stub
 		List<Order> orderList= new ArrayList<>();
-		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select o_status,o_id from orders where oc_id=?";
-			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setInt(1,customer.getC_id());
-			ResultSet resultSet = preparedStatement.executeQuery();
-			
-			while(resultSet.next()) {
-				Order order = new Order();
-				order.setO_status(resultSet.getString("o_status"));
-				order.setO_id((resultSet.getInt("o_id")));
-				orderList.add(order);
-			}
-			for(Order order:orderList) {
-				System.out.println(order);
-			}
-			
-		}
-		catch(ClassNotFoundException | SQLException e) {
-			log.error(e);
-			throw new BusinessException("Internal error occured , kindly contact your system administrator");
-		}
+	
+		customerDao.viewOrder(customer);
+		
 	}
 	
 	public boolean validEmailForNewCustomer(String email){

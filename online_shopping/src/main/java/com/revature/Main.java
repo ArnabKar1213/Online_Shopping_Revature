@@ -53,22 +53,28 @@ public class Main {
 					String emp_email_Id,emp_password,getEmpPass=null;
 					//boolean email;
 					EmployeeDao empDao = new EmployeeDaoImpl();
+					
 					log.info("Enter your email id\n");
 					emp_email_Id=sc.next();
 					String emp_emailId1=emp_email_Id;
 					try {
+						
 					getEmpPass=employeeDaoService.validEmpEmail(emp_email_Id);
 					if(getEmpPass==null) {
-					log.info("Enter \"Yes\" if you wish to continue \n");
-					log.info("Enter \"No\" if you do not wish to continue\n");
-					String c=sc.nextLine();
+						System.exit(0);
+					/*log.info("Enter \"Yes\" if you wish to continue \n");
+					//log.info("Enter \"No\" if you do not wish to continue\n");
+					//String c=sc.nextLine();
 					if(c.equals("No")) {
 						System.out.println("Thanks for using the Console-based app\n");
 						System.exit(0);
 					}
 					if(c.equals("Yes"))
 						continue;
+						*/
 					}
+								
+					
 					
 					while(true) {
 					log.info("Enter your password\n");
@@ -77,7 +83,7 @@ public class Main {
 						log.info("Invalid Password\n");
 						log.info("Enter \"Yes\" if you wish to continue \n");
 						log.info("Enter \"No\" if you do not wish to continue\n");
-						String c=sc.nextLine();
+						String c=sc.next();
 						if(c.equals("No")) {
 							log.info("Thanks for using the Console-based app\n");
 							System.exit(0);

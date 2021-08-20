@@ -3769,3 +3769,575 @@
 
 [main] 2021-08-20 13:13:01 INFO  com.revature.ServiceImpl.CustomerDaoServiceImpl  - Ypur password should contain at least one special character id
 
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:26:37 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:26:40 INFO  com.revature.Main  - Dear customer,enter your email id
+
+[main] 2021-08-20 13:26:50 INFO  com.revature.ServiceImpl.CustomerDaoServiceImpl  - Invalid email id
+[main] 2021-08-20 13:26:50 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:26:50 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:41:35 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:41:39 INFO  com.revature.Main  - Dear customer,enter your email id
+
+[main] 2021-08-20 13:41:48 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 13:41:58 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 13:42:04 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 13:42:08 INFO  com.revature.Main  - Enter the name of the product you want to add to the cart
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Product is not available
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 13:42:12 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 13:42:16 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 13:42:37 INFO  com.revature.Main  - Enter the respective product Id shown in the cart for the item you want to order
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Congo...your order has been successfully placed
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 13:42:42 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 13:42:45 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 13:42:49 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:42:49 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:42:49 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:42:49 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:42:53 WARN  com.revature.Main  - Thank you for using the Console based application
+
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:48:24 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:48:27 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:48:31 INFO  com.revature.dao.impl.EmployeeDaoImpl  - Invalid email id
+[main] 2021-08-20 13:48:31 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:48:31 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:48:31 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:48:34 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-20 13:48:34 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:48:34 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:48:34 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:49:14 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:49:15 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:49:26 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:49:28 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:49:29 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:49:32 INFO  com.revature.ServiceImpl.EmployeeDaoServiceImpl  - Invalid email id
+[main] 2021-08-20 13:49:32 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:49:32 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:49:32 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:56:13 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:56:16 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:56:25 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:56:31 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-20 13:56:31 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:56:31 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:56:31 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:56:34 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-20 13:56:34 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:56:34 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:56:34 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:57:14 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:57:16 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:57:19 INFO  com.revature.ServiceImpl.EmployeeDaoServiceImpl  - Invalid email id
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:57:25 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:57:26 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:57:35 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:57:45 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-20 13:57:45 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:57:45 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:57:49 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:57:52 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-20 13:57:52 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 13:57:52 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 13:58:00 INFO  com.revature.Main  - Thanks for using the Console-based app
+
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:58:18 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:58:23 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:58:31 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 13:58:52 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 13:58:52 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-20 13:58:52 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-20 13:58:52 INFO  com.revature.Main  - Enter 3 to mark the status of an order as shipped
+
+[main] 2021-08-20 13:58:52 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-20 13:58:54 INFO  com.revature.Main  - Enter the name of new product
+[main] 2021-08-20 13:59:20 INFO  com.revature.Main  - Enter the price of new product
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 13:59:33 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 13:59:38 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 13:59:56 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 14:00:01 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:00:01 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-20 14:00:01 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-20 14:00:01 INFO  com.revature.Main  - Enter 3 to mark the status of an order as shipped
+
+[main] 2021-08-20 14:00:01 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-20 14:00:03 INFO  com.revature.Main  - Enter the name of new product
+[main] 2021-08-20 14:00:12 INFO  com.revature.Main  - Enter the price of new product
+[main] 2021-08-20 14:00:23 INFO  com.revature.Main  - Enter the category of new product
+[main] 2021-08-20 14:00:39 INFO  com.revature.Main  - Enter the quantity of new product
+[main] 2021-08-20 14:00:42 INFO  com.revature.Main  - Product added successfully
+[main] 2021-08-20 14:00:42 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:00:42 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-20 14:00:42 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-20 14:00:42 INFO  com.revature.Main  - Enter 3 to mark the status of an order as shipped
+
+[main] 2021-08-20 14:00:42 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-20 14:00:46 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:00:46 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:00:46 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:00:46 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:00:46 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:01:00 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:01:00 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:01:00 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:01:00 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:01:00 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:01:09 INFO  com.revature.Main  - Enter the Order Id
+
+[main] 2021-08-20 14:01:11 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:01:11 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:01:11 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:01:11 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:01:11 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:01:23 INFO  com.revature.Main  - Enter the First name
+
+[main] 2021-08-20 14:01:25 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:01:25 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:01:25 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:01:25 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:01:25 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:01:28 INFO  com.revature.Main  - Enter the Last name
+
+[main] 2021-08-20 14:01:31 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:01:31 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:01:31 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:01:31 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:01:31 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:01:36 INFO  com.revature.Main  - Enter the Email Id
+
+[main] 2021-08-20 14:01:45 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:01:45 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:01:45 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:01:45 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:01:45 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 14:02:05 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 14:02:08 INFO  com.revature.Main  - Dear customer,enter your email id
+
+[main] 2021-08-20 14:02:18 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 14:02:23 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 14:02:33 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 14:02:33 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 14:02:33 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 14:02:33 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 14:02:34 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 14:02:43 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 14:02:49 INFO  com.revature.Main  - Invalid Password
+
+[main] 2021-08-20 14:02:49 INFO  com.revature.Main  - Enter "Yes" if you wish to continue 
+
+[main] 2021-08-20 14:02:49 INFO  com.revature.Main  - Enter "No" if you do not wish to continue
+
+[main] 2021-08-20 14:02:54 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 14:03:24 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:03:24 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-20 14:03:24 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-20 14:03:24 INFO  com.revature.Main  - Enter 3 to mark the status of an order as shipped
+
+[main] 2021-08-20 14:03:24 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-20 14:03:37 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:03:37 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:03:37 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:03:37 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:03:37 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - Hello User, Welcome to Arnab's Console Based Online Shopping App
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - =======================================================================
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 14:03:55 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 14:03:57 INFO  com.revature.Main  - Dear customer,enter your email id
+
+[main] 2021-08-20 14:04:07 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Enter 1 to view the list of products available
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Enter 2 to add a product to the cart
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Enter 3 to view your cart
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Enter 4 to place an order
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Enter 5 to view your orders
+
+[main] 2021-08-20 14:04:11 INFO  com.revature.Main  - Enter 6 to log out
+
+[main] 2021-08-20 14:04:19 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 14:04:19 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 14:04:19 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 14:04:19 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 14:04:21 INFO  com.revature.Main  - Enter your email id
+
+[main] 2021-08-20 14:04:34 INFO  com.revature.Main  - Enter your password
+
+[main] 2021-08-20 14:04:39 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:04:39 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-20 14:04:39 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-20 14:04:39 INFO  com.revature.Main  - Enter 3 to mark the status of an order as shipped
+
+[main] 2021-08-20 14:04:39 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-20 14:04:42 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:04:42 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:04:42 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:04:42 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:04:42 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:04:44 INFO  com.revature.Main  - Enter the Email Id
+
+[main] 2021-08-20 14:04:55 INFO  com.revature.Main  - Enter 1 to search by Order Id
+
+[main] 2021-08-20 14:04:55 INFO  com.revature.Main  - Enter 2 to search by First name
+
+[main] 2021-08-20 14:04:55 INFO  com.revature.Main  - Enter 3 to search by Last name 
+
+[main] 2021-08-20 14:04:55 INFO  com.revature.Main  - Enter 4 to search by Email id
+
+[main] 2021-08-20 14:04:55 INFO  com.revature.Main  - Enter 5 if you want to do some other task
+
+[main] 2021-08-20 14:05:03 INFO  com.revature.Main  - Welcome, what you want to do today?
+
+[main] 2021-08-20 14:05:03 INFO  com.revature.Main  - Enter 1 to add a product
+
+[main] 2021-08-20 14:05:03 INFO  com.revature.Main  - Enter 2 to search a customer
+
+[main] 2021-08-20 14:05:03 INFO  com.revature.Main  - Enter 3 to mark the status of an order as shipped
+
+[main] 2021-08-20 14:05:03 INFO  com.revature.Main  - Enter 4 to log out
+
+[main] 2021-08-20 14:05:07 INFO  com.revature.Main  - Thank you dear Employee
+
+[main] 2021-08-20 14:05:07 INFO  com.revature.Main  - Enter 1 to login as an Employee
+
+[main] 2021-08-20 14:05:07 INFO  com.revature.Main  - Enter 2 to login as an Customer
+
+[main] 2021-08-20 14:05:07 INFO  com.revature.Main  - Enter 3 to register as a Customer
+
+[main] 2021-08-20 14:05:07 INFO  com.revature.Main  - Enter 4 to exit
+
+[main] 2021-08-20 14:05:09 WARN  com.revature.Main  - Thank you for using the Console based application
+

@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import com.app.dao.dbutil.MySqlDBConnection;
 import com.app.exception.BusinessException;
 import com.revature.Service.EmployeeDaoService;
+import com.revature.dao.EmployeeDao;
 import com.revature.dao.ProductDao;
 import com.revature.dao.impl.EmployeeDaoImpl;
 import com.revature.dao.impl.ProductDaoImpl;
@@ -17,13 +18,13 @@ import com.revature.model.Employee;
 import com.revature.model.Product;
 
 public class EmployeeDaoServiceImpl implements EmployeeDaoService {
-
+	EmployeeDao employeeDao = new EmployeeDaoImpl();
 	Logger log = Logger.getLogger(EmployeeDaoServiceImpl.class);
 	@Override
 	public String validEmpEmail(String emp_email) throws BusinessException {
 		// TODO Auto-generated method stub
 		String getPass=null;
-		int res=0;
+		
 	
 		try(Connection connection = MySqlDBConnection.getConnection()){
 			String sql = "select emp_pass from employee where emp_emailId=?";
@@ -37,13 +38,15 @@ public class EmployeeDaoServiceImpl implements EmployeeDaoService {
 				}
 				if(getPass==null) {
 					log.info("Invalid email id");
-					res=1;
+					
 				}
 		}
 				catch(ClassNotFoundException | SQLException e) {
 					log.error(e);
 					throw new BusinessException("Internal error occured , kindly contact your system administrator");
 				}
+				
+	//	getPass=employeeDao.validEmpEmail(emp_email);
 		return getPass;
 	}
 
@@ -70,18 +73,8 @@ public class EmployeeDaoServiceImpl implements EmployeeDaoService {
 	public int markStatus(int order_id) throws BusinessException {
 		// TODO Auto-generated method stub
 		int status;
-		try(Connection connection=MySqlDBConnection.getConnection()){
-			String sql="update orders set o_status=? where o_id=?";
-			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setString(1,"Shipped");
-			preparedStatement.setInt(2,order_id);
-		    status= preparedStatement.executeUpdate();
-			}
-		catch (ClassNotFoundException | SQLException e) {
-			log.error(e);
-			throw new BusinessException("Internal error occured contact your System administrator");
-		}
 		
+		status=employeeDao.markStatus(order_id);
 		return status;
 	}
 
@@ -105,28 +98,8 @@ public class EmployeeDaoServiceImpl implements EmployeeDaoService {
 	public Employee getEmpByEmailId(String email) throws BusinessException {
 		// TODO Auto-generated method stub
 		Employee employee = new Employee();
-		try(Connection connection = MySqlDBConnection.getConnection()){
-			String sql = "select emp_id,emp_fname,emp_lname,emp_emailId,emp_pass from employee where emp_emailId=?";
-			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			
-			preparedStatement.setString(1,email);
-			
-			ResultSet resultSet = preparedStatement.executeQuery();
-			while(resultSet.next()) {
-				employee.setEmp_id((resultSet.getInt("emp_id")));
-				employee.setEmp_fname(resultSet.getString("emp_fname"));
-				employee.setEmp_lname(resultSet.getString("emp_lname"));
-				employee.setEmp_emailId(resultSet.getString("emp_emailId"));
-				employee.setEmp_pass(resultSet.getString("emp_pass"));
-			}
-			System.out.println(employee);
-			
-			
-		}
-		catch(ClassNotFoundException | SQLException e) {
-			log.error(e);
-			throw new BusinessException("Internal error occured , kindly contact your system administrator");
-		}
+		
+		employee=employeeDao.getEmpByEmailId(email);
 		return employee;
 	}
 
